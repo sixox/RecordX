@@ -1,0 +1,16 @@
+<ul data-role="listview" data-count-theme="b" data-inset="true">
+
+  <% @workouts.each do |workout| %>
+       
+      <li>
+        <%= link_to  trains_path(workout.id), :method => :get do %>
+            <%= workout.name %>
+            <span class="ui-li-count"><%= workout.trains.size %></span>
+        <% end %>
+      </li>
+
+
+       
+  <% end %>
+
+</ul>

@@ -1,0 +1,10 @@
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+    
+  <% @trains.each do |train| %>
+
+    <li><a href="#"><%= train.name %></a></li>
+        <li><a href="#"><%= train.set %></a></li>
+        <li><a href="#"><%= train.rep %></a></li>
+<% end  %>
+        
+</ul>

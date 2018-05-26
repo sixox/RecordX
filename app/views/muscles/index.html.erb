@@ -1,0 +1,16 @@
+<ul data-role="listview" data-count-theme="b" data-inset="true">
+
+  <% @muscles.each do |muscle| %>
+       
+      <li>
+        <%= link_to  muscle_workouts_path(muscle) do %>
+            <%= muscle.name %>
+            <span class="ui-li-count"><%= muscle_trains_number muscle %></span>
+        <% end %>
+      </li>
+
+
+       
+  <% end %>
+
+</ul>
